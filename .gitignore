@@ -6,5 +6,6 @@ __pycache__/
 *.db
 *.onnx
 *.onnx.json
+!models/*.onnx
+!models/*.onnx.json
 .DS_Store
-models/
