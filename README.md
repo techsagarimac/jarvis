@@ -2,6 +2,8 @@
 
 Local-first voice assistant scaffold: **faster-whisper** for speech-to-text, **Piper** for speech, **Claude** (Anthropic) for reasoning and tool use, and **SQLite** for memory.
 
+**Languages:** Python 3.10–3.13 (assistant), HTML/CSS/JavaScript (HUD).
+
 Logic is not implemented yet — each module is a documented stub.
 
 ## Layout
