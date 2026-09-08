@@ -1,0 +1,28 @@
+# Jarvis voice assistant — pinned stack that shares onnxruntime 1.x
+# and targets Python 3.10–3.13. faster-whisper and piper-tts both require
+# onnxruntime<2; pinning it here avoids a pip resolver clash.
+#
+# Requires: Python >=3.10 (anthropic 1.1.0 / python-dotenv 1.2.3).
+
+# --- Speech-to-text (local) ---
+faster-whisper==1.2.1
+ctranslate2==4.6.0
+
+# --- LLM (Anthropic Claude; API key required) ---
+anthropic==1.1.0
+
+# --- Text-to-speech (local Piper) ---
+piper-tts==1.7.0
+
+# --- Shared native runtime used by Whisper + Piper ---
+onnxruntime==1.20.1
+numpy==2.2.6
+
+# --- Microphone capture + env config ---
+sounddevice==0.5.6
+python-dotenv==1.2.3
+
+# --- Wake word (hey_jarvis ONNX; shares onnxruntime<2) ---
+openwakeword==0.6.0
+scipy==1.15.3
+scikit-learn==1.6.1
